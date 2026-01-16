@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Proxy Settings Manager</h1>
+
+        <div class="field">
+            <label for="proxy-type">Type:</label>
+            <select id="proxy-type" class="select-input">
+                <option value="PROXY">HTTP (PROXY)</option>
+                <option value="HTTPS">HTTPS</option>
+                <option value="SOCKS4">SOCKS4</option>
+                <option value="SOCKS5">SOCKS5</option>
+            </select>
+        </div>
+
+        <div class="field">
+            <label for="proxy-url">URL:</label>
+            <input type="text" id="proxy-url" class="text-input" placeholder="host:port">
+        </div>
+
+        <div class="field">
+            <label for="proxy-username">Username:</label>
+            <input type="text" id="proxy-username" class="text-input" placeholder="(optional)">
+        </div>
+
+        <div class="field">
+            <label for="proxy-password">Password:</label>
+            <input type="password" id="proxy-password" class="text-input" placeholder="(optional)">
+        </div>
+
+        <div class="status-row">
+            <span class="status-label">Status:</span>
+            <span id="status" class="status-value">Checking...</span>
+        </div>
+
+        <button id="toggle-btn" class="toggle-btn" disabled>Loading...</button>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>

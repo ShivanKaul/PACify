@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "PACify",
+  "version": "0.0.9",
+  "description": "Configure browser proxy settings with PAC scripts",
+  "permissions": ["proxy", "storage", "webRequest", "webRequestAuthProvider"],
+  "host_permissions": ["<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "PACify Settings Manager"
+  }
+}
