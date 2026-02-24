@@ -12,10 +12,22 @@ A browser extension to configure browser proxy settings using PAC scripts. Teste
 
 ## Installation
 
-1. Open `chrome://extensions` (or `brave://extensions`)
-2. Enable "Developer mode" (toggle in top right)
-3. Click "Load unpacked"
-4. Select this folder
+1. Download the latest `PACify-<version>.zip` from [Releases](https://github.com/ShivanKaul/PACify/releases)
+2. Unzip it to a folder
+3. Open `chrome://extensions` (or `brave://extensions`)
+4. Enable "Developer mode" (toggle in top right)
+5. Click "Load unpacked"
+6. Select the unzipped folder
+
+### Building from source
+
+Run the build script from the project directory:
+
+```bash
+./build.sh
+```
+
+This bumps the patch version in `manifest.json` and produces a zip file in the project folder (e.g. `PACify-0.0.10.zip`). The zip can be loaded as an unpacked extension (steps 2-6 above) or uploaded to the [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole).
 
 ## Usage
 
